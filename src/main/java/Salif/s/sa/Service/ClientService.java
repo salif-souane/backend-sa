@@ -25,6 +25,7 @@ public class ClientService {
         Client clientDansBDD =  this.clientRepository.findByEmail(client.getEmail());
         if(clientDansBDD == null){
          this.clientRepository.save(client);
+         
     }
 }
 

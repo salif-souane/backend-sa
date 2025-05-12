@@ -7,4 +7,5 @@ import Salif.s.sa.Entity.Client;
 
 public interface ClientRepository<Integer> extends JpaRepository<Client, Integer> {
     Client findByEmail(String email);
+    
 }

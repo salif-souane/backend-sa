@@ -14,6 +14,10 @@ public class Client {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    
+    //@Column(unique = true)
+   // private String name;
+
     @Column(unique = true)
     private String email;
 
@@ -22,7 +26,9 @@ public class Client {
 
     public Client(int id, String email){
         this.id = id;
+        //this.name = name;
         this.email = email;
+
     }
 
     public int getClient(){
@@ -32,6 +38,8 @@ public class Client {
     public void setClient(int id){
         this.id = id;
     }
+
+   
 
     public String getEmail(){
         return this.email;
